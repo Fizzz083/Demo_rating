@@ -236,7 +236,7 @@ function indiFunction() {
     // for( var i in data){
     //     console.log(i);
     // }
-    document.getElementById("Team_name").innerHTML = myParam + " paisi";
+    document.getElementById("Team_name").innerHTML = myParam + " ";
 
 
 };
