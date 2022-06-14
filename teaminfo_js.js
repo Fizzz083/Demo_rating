@@ -45,7 +45,11 @@ function drawBackgroundColor(getdata) {
         // },
         
       },
+      pointSize: 8,
       gridlines: { count: -1},
+      series: {
+        0: { pointShape: 'circle', }
+    },
       
       
       backgroundColor: '#f1f8e9'
