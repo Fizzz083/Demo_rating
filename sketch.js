@@ -186,6 +186,7 @@ function myFunction() {
 
       for (var j = 0; j < col.length; j++) {
           var tabCell = tr.insertCell(-1);
+          console.log(j+ " hello "+ Teams[i][col[j]]);
 
           if(j==1){
             var link_ = "./teaminfo.html?id="+Teams[i][col[j]];
@@ -195,11 +196,22 @@ function myFunction() {
           }
           else if(j==4){
             if(Teams[i][col[j]]==Teams[i][col[2]]){
-              tabCell.innerHTML = "0";
+              tabCell.innerHTML = "?";
             }
-            else 
-            tabCell.innerHTML = Teams[i][col[j]];
+            else {
+              if(parseInt(Teams[i][col[j]])<0){
+                tabCell.style.color = "red";
+              }
+              // else if( parseInt(Teams[i][col[j]])>0) {
+                else{
+  
+                  tabCell.style.color = "green";
+              }
+              tabCell.innerHTML = Teams[i][col[j]];
+            }
+           
           }
+
           else
           tabCell.innerHTML = Teams[i][col[j]];
       }
