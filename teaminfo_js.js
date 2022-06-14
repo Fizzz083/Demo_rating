@@ -48,7 +48,7 @@ function drawBackgroundColor(getdata) {
       pointSize: 8,
       gridlines: { count: -1},
       series: {
-        0: { pointShape: 'circle', }
+        0: { pointShape: 'circle'}
     },
       
       
@@ -79,7 +79,7 @@ function loaddata(str) {
             "2": "1874",
             "3": "1930",
             "4": "1964",
-            "team":"Opi'17, Arnob'18, Emon'18"
+            "team":"Mehrab Hossain Opi '2k17\nArnob Sarker '2k18\nSHarif Minhazul Emon '2k18\n"
         },
         {
             "handle": "KUET_BreakDown",
@@ -87,7 +87,7 @@ function loaddata(str) {
             "2": "1642",
             "3": "1654",
             "4": "1716",
-            "team":"Mustafiz'17, Shakil'17, Likhon'17"
+            "team":"Md. Mustafizur Rahman Arman '2k17\nMahadi Hasan '2k17\nLikhon Sarker '2k16"
         },
         {
             "handle": "KUET_FALCONS",
@@ -212,7 +212,7 @@ function loaddata(str) {
         {
             "handle": "KUET_Yeti",
             "1": "0",
-            "2": "",
+            "2": "0",
             "3": "0",
             "4": "934",
             "team":""
