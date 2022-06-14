@@ -55,7 +55,7 @@ th, td, p, input {
             /* display: inline-block; */
             padding: 0.5rem 0.5rem;
             border-radius: rem;
-            width: 300px;
+            width: 200px;
             height: 30px;
             background-color: rgba(203, 58, 203, 0.703);
             background-color:;
@@ -121,7 +121,6 @@ th, td, p, input {
 
           .fullscreen {
 
-            position:absolute;
             top:0px;
             right:0px;
             bottom:0px;
@@ -130,12 +129,19 @@ th, td, p, input {
           .maindiv_par {
             margin-left: 70px;
             margin-top: 50px;
+           
           }
 
           .maindiv{
-            margin-left: 00px;
+            width: 70%;
+            
             margin-top: 50px;
-            width: 1000px;
+           
+          }
+          
+          .maindiv table{
+            margin: 0 auto;
+            text-align: center;
           }
 
           .maindiv th {
@@ -151,4 +157,14 @@ th, td, p, input {
           .maindiv a{
             color: #1c5dc0;
             text-decoration: none;
+          }
+
+          .sidediv {
+            flex-grow: 1;
+            margin-top: 92px;
+          }
+
+          .sidediv th {
+            font-size: 18px;
+            padding: 18px;
           }
