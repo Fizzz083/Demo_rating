@@ -11,3 +11,144 @@ th, td, p, input {
         th {
             font-weight:bold;
         }
+
+
+        .sgipclogo {
+            
+            z-index: -1;
+            margin-top: 50px;
+          }
+          .sgipclogoi {
+            margin-left: 40px;
+            border-radius: 50%;
+            margin-top: 0px;
+            z-index: 2;
+            background-color: #000000;
+          }
+          .logoshadowi{
+            left: 40px;
+            padding: 0px;
+            box-shadow: 15px 15px 18px #000000;
+          }
+          
+          
+          .homebutton {
+            left: 40px;
+            margin-top: 50px;
+            display: flex;
+            height: 70px;
+            width: 1000px;
+            flex-direction: row;
+            justify-content: space-between; 
+            align-items: center;
+            margin-right: 2rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: right;
+            position: relative;
+            
+            
+           
+          }
+          .button2 {
+            /* display: inline-block; */
+            padding: 0.5rem 0.5rem;
+            border-radius: rem;
+            width: 300px;
+            height: 30px;
+            background-color: rgba(203, 58, 203, 0.703);
+            background-color:;
+            color: rgb(5, 3, 3);
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 0rem;
+            transition: all 0.1s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            color: #000000;
+            text-decoration: rgb(0, 0, 0);
+            margin-right: 5px;
+            text-decoration: none;
+            
+          }
+          .button2:after {
+            /* display: inline-block; */
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: rgb(105, 152, 240); */
+            background-color: transparent;
+            text-decoration: #fff9f9;
+            border-radius: 0rem;
+            z-index: -2;
+            text-decoration: none;
+          }
+          .button2:before {
+            text-decoration: none;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            /* display: inline-block; */
+            background-color: rgb(23, 44, 77);
+            transition: all 0.3s;
+            border-radius: 0rem;
+            z-index: -1;
+          }
+          .button2:hover {
+            text-decoration: white;
+            /* display: inline-block; */
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+          }
+          .button2:hover::before {
+            text-decoration: none;
+            /* display: inline-block; */
+            width: 100%;
+          }
+          .buttonshadowi {
+            border: 1px solid;
+            padding: 5px;
+            box-shadow: 1px 1px 1px #000000;
+          }
+
+          .fullscreen {
+
+            position:absolute;
+            top:0px;
+            right:0px;
+            bottom:0px;
+            left:0px;
+          }
+          .maindiv_par {
+            margin-left: 70px;
+            margin-top: 50px;
+          }
+
+          .maindiv{
+            margin-left: 00px;
+            margin-top: 50px;
+            width: 1000px;
+          }
+
+          .maindiv th {
+            font-size: 18px;
+            padding: 18px;
+            background-color: rgb(224, 232, 217);
+          }
+          .maindiv td{
+            font-size: 15px;
+            padding: 10px;
+            color: #000000;
+          }
+          .maindiv a{
+            color: #1c5dc0;
+            text-decoration: none;
+          }
