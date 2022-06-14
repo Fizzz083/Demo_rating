@@ -201,13 +201,15 @@ function myFunction() {
             else {
               if(parseInt(Teams[i][col[j]])<0){
                 tabCell.style.color = "red";
+                tabCell.innerHTML = Teams[i][col[j]];
               }
               // else if( parseInt(Teams[i][col[j]])>0) {
                 else{
   
                   tabCell.style.color = "green";
+                  tabCell.innerHTML = "+"+ Teams[i][col[j]];
               }
-              tabCell.innerHTML = Teams[i][col[j]];
+              
             }
            
           }
