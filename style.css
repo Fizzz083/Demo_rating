@@ -168,3 +168,9 @@ th, td, p, input {
             font-size: 18px;
             padding: 18px;
           }
+          .redd{
+            color: red;
+          }
+          .greenn{
+            color:green;
+          }
