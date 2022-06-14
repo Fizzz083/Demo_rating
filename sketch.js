@@ -171,7 +171,7 @@ function myFunction() {
       console.log(col[i][0]);
       //col[i] = col[i][0].toUpperCase() + col[i].slice(1);
       if( i==5){
-        th.innerHTML =col[i][0].toUpperCase() + col[i].slice(1)+"_ID";
+        th.innerHTML =col[i][0].toUpperCase() + col[i].slice(1)+"_No";
 
       }
       else
@@ -180,13 +180,16 @@ function myFunction() {
   }
 
   // ADD JSON DATA TO THE TABLE AS ROWS.
+
+  var last_contest_no = "3";
   for (var i = 0; i < Teams.length; i++) {
 
       tr = table.insertRow(-1);
 
+      console.log(Teams[i]);
       for (var j = 0; j < col.length; j++) {
           var tabCell = tr.insertCell(-1);
-          console.log(j+ " hello "+ Teams[i][col[j]]);
+         
 
           if(j==1){
             var link_ = "./teaminfo.html?id="+Teams[i][col[j]];
@@ -194,9 +197,34 @@ function myFunction() {
             tabCell.innerHTML = li;
 
           }
+          else if(j==5)
+          {
+            var val = parseInt(Teams[i][col[j]]);
+            val+=1;
+            tabCell.innerHTML = val;
+
+          }
           else if(j==4){
             if(Teams[i][col[j]]==Teams[i][col[2]]){
-              tabCell.innerHTML = "?";
+              if(Teams[i][col[5]]==last_contest_no)
+              {
+               
+                var add = parseInt(Teams[i][col[j]])-1500;
+                 if(add>=0){
+                  tabCell.style.color = "green";
+                  tabCell.innerHTML = "+"+ add;
+
+                 }
+                 else{
+                  tabCell.style.color = "red";
+                tabCell.innerHTML = add;
+
+                 }
+              }
+              else{
+                tabCell.innerHTML = "?";
+              }
+              
             }
             else {
               if(parseInt(Teams[i][col[j]])<0){
