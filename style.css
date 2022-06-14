@@ -175,3 +175,12 @@ th, td, p, input {
           .greenn{
             color:green;
           }
+
+          .teammain{
+            margin-left: 50px;
+            margin-top: 50px;
+          }
+
+          .multiline {
+            white-space: pre-wrap;
+          }
